@@ -1,0 +1,64 @@
+.Content {
+  width: 650px;
+  min-height: 500px;
+  background: rgba(0, 0, 0, 0.15);
+  position: relative;
+  & form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    & span {
+      color: #fff;
+      margin-bottom: 20px;
+      margin-top: -25px;
+      font-size: 14px;
+    }
+  }
+  &-input {
+    width: 85%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .4);
+    outline: none;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 15px;
+    transition: .2s;
+    margin-bottom: 30px;
+    &::placeholder {
+      color: #fff;
+    }
+    &:focus {
+      border-bottom: 2px solid #fff;
+    }
+  }
+  &-btn {
+    width: 87%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #77B857;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .2s;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    &:hover {
+      background: #8EC272;
+    }
+  }
+}
+
+.ErrorBlock {
+  width: 87%;
+  height: 60px;
+  position: absolute;
+  bottom: 30px;
+  &No {
+    display: none;
+  }
+}
